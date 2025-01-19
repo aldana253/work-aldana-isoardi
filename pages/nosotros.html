@@ -4,64 +4,110 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css"> 
+
     <title>Bonnie tienda de ropa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
-<body id="body-nosotros">
+<body id="bodyTiendas">  
 
 <header>
     
-<section class="sectionLogo">
-    <img src="../images/7JLVA.png" alt="logo" a href="index.html"></a> 
-</section> 
-
-<section class="sectionButton">
-    <button>Log in</button>
-</section> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="../index.html">
+            <img src="../images/boni.png" alt="Bonnie" width="100" height="40">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tiendas.html">Tiendas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Productos</a></li>
+                  <li><a class="dropdown-item" href="#">Tiendas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Promociones</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
     
 </header>  
 
-<nav>
 
-    <ul>
-    <li><a href="../index.html">Inicio</a></li> 
-    <li><a href="productos.html">Productos</a></li>
-    <li><a href="tiendas.html">Tiendas</a></li>
-    <li><a href="promociones.html">Promociones</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    </ul>
 
-</nav>
 
-<main>
+<main id="mainNosotros">
+    
+    <section class="nosotros1">
+        <div class="contenedor1">
+            <img src="../images/edificio1.jpg" alt="">
+         </div>
+        <div class="contenedor2">
+        <h1>Fabricamos ropa de calidad para todos.</h1>
+        <p>nos dedicamos a fabricar ropa de calidad que combina estilo, comodidad y durabilidad. Cada prenda es creada con materiales cuidadosamente seleccionados y un diseño pensado para realzar tu personalidad. Creemos que la moda debe ser accesible para todos, sin comprometer la excelencia en cada detalle.
+
+            Nuestra pasión por la moda se refleja en cada colección, ofreciendo opciones para todas las ocasiones y estilos de vida. Desde piezas modernas y casuales hasta diseños elegantes, trabajamos para que encuentres en Angela no solo ropa, sino también una experiencia que te haga sentir única en cada momento.</p>
+        </div>
+        </section>
+        <section class="nosotros2">
+          <div class="contenedor11">
+              <img src="../images/edificio1.jpg" alt="">
+           </div>
+          <div class="contenedor22">
+          <h1>Disenos personalizados</h1>
+          <p>En Angela, entendemos que cada persona es única, por eso ofrecemos diseños personalizados que te permiten expresar tu estilo de forma auténtica. Trabajamos contigo para crear prendas que se ajusten a tus gustos, desde los colores hasta los cortes, siempre con la más alta calidad.
+
+            Ya sea para una ocasión especial o para tu día a día, nuestros diseños personalizados te brindan la oportunidad de destacar con piezas únicas. Con un enfoque en la comodidad y la elegancia, cada prenda será una extensión de tu personalidad. ¡Haz de tu ropa algo verdaderamente tuyo!</p>
+          </div>
+          </section>
+    
 
 </main>
 
 <footer id="footer">
     <section class="footerContacto">
-        <h2>Contacto</h2>
+        <h3>Contacto</h3>
         <p>tiendaropa@gmail.com</p>
         <p>tel:1161827482</p>
         <p>Moreno 550, CABA</p>
     </section>
 
     <section class="footerRedes">
-        <h2>Redes sociales</h2>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin-in"></i>
         
     </section>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -4,64 +4,113 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css"> 
+
     <title>Bonnie tienda de ropa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
-<body id="body-tiendas">
+<body id="bodyTiendas">  
 
 <header>
     
-<section class="sectionLogo">
-    <img src="../images/7JLVA.png" alt="logo" a href="index.html"></a> 
-</section> 
-
-<section class="sectionButton">
-    <button>Log in</button>
-</section> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="../index.html">
+            <img src="../images/boni.png" alt="Bonnie" width="100" height="40">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tiendas.html">Tiendas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Productos</a></li>
+                  <li><a class="dropdown-item" href="#">Tiendas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Promociones</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
     
 </header>  
 
-<nav>
 
-    <ul>
-    <li><a href="../index.html">Inicio</a></li> 
-    <li><a href="productos.html">Productos</a></li>
-    <li><a href="tiendas.html">Tiendas</a></li>
-    <li><a href="promociones.html">Promociones</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    </ul>
 
-</nav>
 
-<main>
+<main id="mainTiendas">
+    <section class="imagenTiendas">
+    <div>
+        <img src="../images/slider1.jpeg" alt="">
+    </div>
+</section>
+<h1>Nuestras tiendas</h1>
+        <p>Somos un centro comercial ubicado en el corazón de la Ciudad Autónoma de Buenos Aires, con acceso directo a la estación de subterráneo Carlos Gardel, a seis cuadras de la estación ferroviaria de Once y próximo al acceso a la autopista que conduce al Aeropuerto Internacional de Ezeiza. Abrimos nuestras puertas al público el 10 de noviembre de 1998. Somos un edificio histórico que durante el período entre 1889 y 1984 operó como el principal mercado de distribución de productos frescos de la Ciudad Autónoma de Buenos Aires.
+            Somos el Shopping más grande de la ciudad y centro de los eventos culturales más relevantes de Buenos Aires, donde se encuentran las mejores marcas y ofertas, un ambiente cálido y seguro para personas de todas las edades. Contamos con más de 230 puntos de venta, una propuesta gastronómica con más de 25 locales, 12 salas de cine con capacidad para más de 3000 personas y distintas zonas de entretenimiento tales como Museo de los Niños, G-Bunker y Neverland.</p>
 
+
+        <section class="localesTiendas">
+            <h2>Nuestros locales</h2>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/9djeFkcHG1zyi7mGA">Local 1</a></li>
+                <li><a href="https://maps.app.goo.gl/9djeFkcHG1zyi7mGA">Local 2</a></li>
+                <li><a href="https://maps.app.goo.gl/9djeFkcHG1zyi7mGA">Local 3</a></li>
+            </ul>
+            <div>
+            <img src="../images/edificio1.jpg" alt="">
+            <img src="../images/edificio2.jpg" alt="">
+            <img src="../images/edificio3.jpg" alt="">
+            </div>
+        </section>
+        <section class="iframe">
+            <h2>Mapa de la tienda principal </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.2210072480793!2d-58.376476725087606!3d-34.611453472951425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4f2c0aa45%3A0x12831366acdda31e!2sMoreno%20550%2C%20C1091AAL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1737170604173!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><iframe src="" frameborder="0"></iframe>
+    </section>
+  
 </main>
 
 <footer id="footer">
     <section class="footerContacto">
-        <h2>Contacto</h2>
+        <h3>Contacto</h3>
         <p>tiendaropa@gmail.com</p>
         <p>tel:1161827482</p>
         <p>Moreno 550, CABA</p>
     </section>
 
     <section class="footerRedes">
-        <h2>Redes sociales</h2>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin-in"></i>
         
     </section>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
